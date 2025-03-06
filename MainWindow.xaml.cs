@@ -15,7 +15,7 @@ namespace MyWpfApp
         {
             InitializeComponent();
 
-            // Настройка DbContext
+            // Configure DbContext
             var optionsBuilder = new DbContextOptionsBuilder<UniversityDbContext>();
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=UniversityDB;Trusted_Connection=True;");
             _dbContext = new UniversityDbContext(optionsBuilder.Options);
@@ -28,7 +28,7 @@ namespace MyWpfApp
         private void LoadStudents()
         {
             var students = _dbContext.Students
-                .Include(s => s.Specialization) // Подгрузка специальности
+                .Include(s => s.Specialization) // Load specialization
                 .ToList();
             StudentsGrid.ItemsSource = students;
         }
@@ -40,20 +40,20 @@ namespace MyWpfApp
                 var studentName = StudentNameInput.Text;
                 if (string.IsNullOrWhiteSpace(studentName))
                 {
-                    MessageBox.Show("Имя студента не может быть пустым.");
+                    MessageBox.Show("Student name cannot be empty.");
                     return;
                 }
 
                 if (!int.TryParse(SpecializationIdInput.Text, out int specializationId))
                 {
-                    MessageBox.Show("ID специальности должно быть числом.");
+                    MessageBox.Show("Specialization ID must be a number.");
                     return;
                 }
 
                 var specialization = _dbContext.Specializations.FirstOrDefault(s => s.SpecializationId == specializationId);
                 if (specialization == null)
                 {
-                    MessageBox.Show("Специальности с указанным ID не существует.");
+                    MessageBox.Show("No specialization exists with the given ID.");
                     return;
                 }
 
@@ -66,12 +66,12 @@ namespace MyWpfApp
                 _dbContext.Students.Add(newStudent);
                 _dbContext.SaveChanges();
 
-                MessageBox.Show("Студент успешно добавлен!");
-                LoadStudents(); 
+                MessageBox.Show("Student successfully added!");
+                LoadStudents();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
 
@@ -87,17 +87,17 @@ namespace MyWpfApp
                     _dbContext.Students.Update(selectedStudent);
                     _dbContext.SaveChanges();
 
-                    MessageBox.Show("Студент обновлен!");
+                    MessageBox.Show("Student updated!");
                     LoadStudents();
                 }
                 else
                 {
-                    MessageBox.Show("ID специальности должен быть числом.");
+                    MessageBox.Show("Specialization ID must be a number.");
                 }
             }
             else
             {
-                MessageBox.Show("Выберите студента для обновления.");
+                MessageBox.Show("Select a student to update.");
             }
         }
 
@@ -108,19 +108,19 @@ namespace MyWpfApp
                 _dbContext.Students.Remove(selectedStudent);
                 _dbContext.SaveChanges();
 
-                MessageBox.Show("Студент удален!");
+                MessageBox.Show("Student deleted!");
                 LoadStudents();
             }
             else
             {
-                MessageBox.Show("Выберите студента для удаления.");
+                MessageBox.Show("Select a student to delete.");
             }
         }
 
         private void ClearTextBox(object sender, RoutedEventArgs e)
         {
             TextBox textBox = sender as TextBox;
-            if (textBox != null && (textBox.Text == "Імя студента" || textBox.Text == "ID спеціальності"))
+            if (textBox != null && (textBox.Text == "Student Name" || textBox.Text == "Specialization ID"))
             {
                 textBox.Text = "";
             }
@@ -133,25 +133,25 @@ namespace MyWpfApp
             {
                 if (textBox.Name == "StudentNameInput")
                 {
-                    textBox.Text = "Імя студента";
+                    textBox.Text = "Student Name";
                 }
                 else if (textBox.Name == "SpecializationIdInput")
                 {
-                    textBox.Text = "ID спеціальності";
+                    textBox.Text = "Specialization ID";
                 }
             }
         }
 
         private void SeedDatabase()
         {
-            
+
             if (!_dbContext.Faculties.Any())
             {
                 var faculty = new Faculty { Name = "Engineering" };
                 _dbContext.Faculties.Add(faculty);
                 _dbContext.SaveChanges();
 
-                
+
                 var specializations = new List<Specialization>
         {
             new Specialization { Name = "Computer Science", FacultyId = faculty.FacultyId },
@@ -161,13 +161,13 @@ namespace MyWpfApp
                 _dbContext.SaveChanges();
             }
 
-            
+
             if (!_dbContext.Students.Any())
             {
                 var student = new Student
                 {
                     Name = "John Doe",
-                    SpecializationId = _dbContext.Specializations.First().SpecializationId 
+                    SpecializationId = _dbContext.Specializations.First().SpecializationId
                 };
                 _dbContext.Students.Add(student);
                 _dbContext.SaveChanges();
@@ -178,18 +178,18 @@ namespace MyWpfApp
         {
             if (StudentsGrid.SelectedItem is Student selectedStudent)
             {
-                
+
                 DetailStudentName.Text = selectedStudent.Name;
                 DetailSpecializationId.Text = selectedStudent.SpecializationId.ToString();
 
-                // Проверяем, есть ли у студента связанная специальность
+                // Check if the student has an associated specialization
                 if (selectedStudent.Specialization != null)
                 {
                     DetailSpecializationName.Text = selectedStudent.Specialization.Name;
                 }
                 else
                 {
-                    DetailSpecializationName.Text = "Нет данных";
+                    DetailSpecializationName.Text = "No data available";
                 }
             }
             else
@@ -218,7 +218,7 @@ namespace MyWpfApp
 
             if (!students.Any())
             {
-                MessageBox.Show("Студенты не найдены.");
+                MessageBox.Show("No students found.");
             }
         }
 
@@ -230,11 +230,7 @@ namespace MyWpfApp
                 .ToList();
             StudentsGrid.ItemsSource = students;
 
-            MessageBox.Show("Список студентов отсортирован по алфавиту.");
+            MessageBox.Show("Student list sorted alphabetically.");
         }
-
-
-
-
     }
 }
