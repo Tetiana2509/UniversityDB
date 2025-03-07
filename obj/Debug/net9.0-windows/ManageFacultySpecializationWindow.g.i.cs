@@ -109,7 +109,7 @@ namespace MyWpfApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MyWpfApp;component/managefacultyspecializationwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MyWpfApp;V1.0.0.0;component/managefacultyspecializationwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ManageFacultySpecializationWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -5015,11 +5015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tanua\\MyWpfApp\\MyWpfApp.csproj",
+      "projectUniqueName": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MyWpfApp.csproj",
       "projectName": "MyWpfApp",
-      "projectPath": "C:\\Users\\Tanua\\MyWpfApp\\MyWpfApp.csproj",
+      "projectPath": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MyWpfApp.csproj",
       "packagesPath": "C:\\Users\\Tanua\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tanua\\MyWpfApp\\obj\\",
+      "outputPath": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
