@@ -73,6 +73,7 @@ namespace MyWpfApp
             _dbContext.Faculties.Add(faculty);
             _dbContext.SaveChanges();
 
+
             MessageBox.Show("Faculty added!");
             LoadData();
             LoadFilters();

@@ -26,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -48,7 +52,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAUwOwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T10:25:33.417Z",
               "EditorCaption": ""
@@ -62,8 +66,7 @@
               "ToolTip": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\ManageFacultySpecializationWindow.xaml",
               "RelativeToolTip": "ManageFacultySpecializationWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-07T10:12:21.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T10:12:21.576Z"
             },
             {
               "$type": "Document",
