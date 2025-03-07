@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|c:\\users\\tanua\\documents\\github\\universitydb\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|c:\\users\\tanua\\documents\\github\\universitydb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-03-07T17:41:30.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ManageFacultySpecializationWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\ManageFacultySpecializationWindow.xaml.cs",
               "RelativeDocumentMoniker": "ManageFacultySpecializationWindow.xaml.cs",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "ManageFacultySpecializationWindow.xaml.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAA9wEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T10:37:33.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T10:37:33.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T10:25:33.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T10:25:33.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ManageFacultySpecializationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\ManageFacultySpecializationWindow.xaml",
               "RelativeDocumentMoniker": "ManageFacultySpecializationWindow.xaml",
@@ -84,15 +99,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-07T10:06:54.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T10:06:54.355Z"
             },
             {
               "$type": "Bookmark",
