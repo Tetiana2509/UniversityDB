@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|c:\\users\\tanua\\documents\\github\\universitydb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> e085edbe489a102f4610da7cf296d261b8459e30
       "AbsoluteMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|c:\\users\\tanua\\documents\\github\\universitydb\\managefacultyspecializationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:managefacultyspecializationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|c:\\users\\tanua\\documents\\github\\universitydb\\managefacultyspecializationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:managefacultyspecializationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|c:\\users\\tanua\\documents\\github\\universitydb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF5438C4-E160-4E6E-B39B-FC4618042E23}|MyWpfApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> e085edbe489a102f4610da7cf296d261b8459e30
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +38,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "ManageFacultySpecializationWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\ManageFacultySpecializationWindow.xaml.cs",
@@ -43,6 +52,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 2,
+>>>>>>> e085edbe489a102f4610da7cf296d261b8459e30
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -54,8 +66,17 @@
               "EditorCaption": ""
             },
             {
+<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> e085edbe489a102f4610da7cf296d261b8459e30
               "Title": "ManageFacultySpecializationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Tanua\\Documents\\GitHub\\UniversityDB\\ManageFacultySpecializationWindow.xaml",
               "RelativeDocumentMoniker": "ManageFacultySpecializationWindow.xaml",
