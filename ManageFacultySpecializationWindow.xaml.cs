@@ -4,7 +4,6 @@ using MyWpfApp.Data;
 using MyWpfApp.Models;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace MyWpfApp
 {
     public partial class ManageFacultySpecializationWindow : Window
@@ -31,14 +30,12 @@ namespace MyWpfApp
 
         private void LoadFilters()
         {
-            
             FacultyFilterComboBox.ItemsSource = _dbContext.Faculties.ToList();
             SpecializationFilterComboBox.ItemsSource = _dbContext.Specializations.ToList();
         }
 
         private void FilterByFaculty_Click(object sender, RoutedEventArgs e)
         {
-            
             if (FacultyFilterComboBox.SelectedItem is Faculty selectedFaculty)
             {
                 FacultyListGrid.ItemsSource = _dbContext.Faculties
@@ -49,7 +46,6 @@ namespace MyWpfApp
 
         private void FilterBySpecialization_Click(object sender, RoutedEventArgs e)
         {
-            
             if (SpecializationFilterComboBox.SelectedItem is Specialization selectedSpecialization)
             {
                 SpecializationListGrid.ItemsSource = _dbContext.Specializations
@@ -58,21 +54,18 @@ namespace MyWpfApp
             }
         }
 
-
         private void ResetFilter_Click(object sender, RoutedEventArgs e)
         {
-           
             FacultyListGrid.ItemsSource = _dbContext.Faculties.ToList();
             SpecializationListGrid.ItemsSource = _dbContext.Specializations.ToList();
         }
-
 
         private void AddFaculty_Click(object sender, RoutedEventArgs e)
         {
             var facultyName = NewFacultyNameInput.Text;
             if (string.IsNullOrWhiteSpace(facultyName))
             {
-                MessageBox.Show("Название факультета не может быть пустым.");
+                MessageBox.Show("Faculty name cannot be empty.");
                 return;
             }
 
@@ -80,7 +73,7 @@ namespace MyWpfApp
             _dbContext.Faculties.Add(faculty);
             _dbContext.SaveChanges();
 
-            MessageBox.Show("Факультет добавлен!");
+            MessageBox.Show("Faculty added!");
             LoadData();
             LoadFilters();
         }
@@ -90,14 +83,14 @@ namespace MyWpfApp
             var specializationName = NewSpecializationNameInput.Text;
             if (!int.TryParse(NewFacultyIdInput.Text, out int facultyId))
             {
-                MessageBox.Show("ID факультета должно быть числом.");
+                MessageBox.Show("Faculty ID must be a number.");
                 return;
             }
 
             var faculty = _dbContext.Faculties.Find(facultyId);
             if (faculty == null)
             {
-                MessageBox.Show("Факультет с таким ID не существует.");
+                MessageBox.Show("No faculty exists with this ID.");
                 return;
             }
 
@@ -110,10 +103,9 @@ namespace MyWpfApp
             _dbContext.Specializations.Add(specialization);
             _dbContext.SaveChanges();
 
-            MessageBox.Show("Специальность добавлена!");
+            MessageBox.Show("Specialization added!");
             LoadData();
             LoadFilters();
         }
     }
 }
-
